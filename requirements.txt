@@ -2,10 +2,12 @@ appdirs==1.4.3
 asgiref==3.2.7
 CacheControl==0.12.6
 certifi==2019.11.28
+cffi==1.14.0
 chardet==3.0.4
 colorama==0.4.3
 contextlib2==0.6.0
 coverage==5.1
+cryptography==2.9.2
 defusedxml==0.6.0
 distlib==0.3.0
 distro==1.4.0
@@ -13,6 +15,7 @@ Django==3.0.6
 django-allauth==0.41.0
 django-cors-headers==3.3.0
 django-filter==2.2.0
+django-rest-knox==4.1.0
 djangorestframework==3.11.0
 html5lib==1.0.1
 idna==2.8
@@ -25,6 +28,7 @@ packaging==20.3
 pep517==0.8.2
 Pillow==7.1.2
 progress==1.5
+pycparser==2.20
 pyparsing==2.4.6
 python3-openid==3.1.0
 pytoml==0.1.21

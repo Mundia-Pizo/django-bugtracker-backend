@@ -31,7 +31,14 @@ INSTALLED_APPS = [
     'rest_framework',
     ## this is for the CoRS headers for the cross origin resource sharing control
     'corsheaders',
+    'knox',
+    'accounts.apps.AccountsConfig'
 ]
+REST_FRAMEWORK={
+    'DEFAULT_AUTHENTICATION_CLASSES':
+    ('knox.auth.TokenAuthentication',)
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -117,3 +124,7 @@ STATIC_URL = '/static/'
 
 
 CORS_ORIGIN_WHITELIST='http://locahost:3000',
+
+
+
+
