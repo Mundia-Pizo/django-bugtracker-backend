@@ -12,10 +12,15 @@ class ProjectView(ListCreateAPIView):
       permissions.AllowAny
 	]
 
+	def perform_create(self, *args, **kwargs):
+		pass
+
 
 class TrackerView(viewsets.ModelViewSet):
 	queryset = Tracker.objects.all()
 	permission_classes= [
-       permissions.AllowAny
-	]
+       permissions.AllowAny]
 	serializer_class = TrackerAPIViewSerializer
+
+	def perform_create(self,request,*args, **kwargs):
+		pass
